@@ -20,6 +20,11 @@ body {
   line-height: 1.5;
 }
 
+/* Scroll margin for sections */
+#about {
+  scroll-margin-top: 100px;
+}
+
 /* Card hover effects */
 .glassmorphism {
   background: rgba(255, 255, 255, 0.7);
