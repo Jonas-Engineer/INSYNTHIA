@@ -1,5 +1,10 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+  // Initialize all functions
+  initAnimations();
+  setupMobileMenu();
+  setupSmoothScroll();
+  
   // Add animations to elements when they come into view
   const animateOnScroll = function() {
     // Get all agent cards
@@ -105,12 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   };
-
-  // Initialize
-  initAnimations();
-  setupMobileMenu();
-  setupSmoothScroll();
-  setupCardHover();
 
   // Listen for scroll events
   window.addEventListener('scroll', animateOnScroll);

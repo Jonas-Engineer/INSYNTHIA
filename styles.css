@@ -22,7 +22,11 @@ body {
 
 /* Scroll margin for sections */
 #about {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 120px;
+}
+
+#agents {
+  scroll-margin-top: 120px;
 }
 
 /* Card hover effects */
