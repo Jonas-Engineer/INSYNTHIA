@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - INSYNTHIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white bg-opacity-70 backdrop-blur-lg z-50 py-4 px-6 flex justify-between items-center shadow-sm">
+        <div class="font-bold text-xl text-indigo-600">INSYNTHIA</div>
+        <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">Features</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">Use Cases</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">Pricing</a>
+            <a href="about.html" class="hover:text-indigo-600 transition-colors">About</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow-md btn">
+                Start now
+            </a>
+            <button class="menu-toggle md:hidden flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 p-6 flex flex-col">
+        <div class="flex justify-between items-center mb-8">
+            <div class="font-bold text-xl text-indigo-600">INSYNTHIA</div>
+            <button class="menu-toggle flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800 transform rotate-45 translate-y-1.5"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 opacity-0"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 transform -rotate-45 -translate-y-1.5"></span>
+            </button>
+        </div>
+        <div class="flex flex-col space-y-4">
+            <a href="index.html" class="hover:text-indigo-600 transition-colors py-2">Home</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Features</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Use Cases</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Pricing</a>
+            <a href="about.html" class="hover:text-indigo-600 transition-colors py-2">About</a>
+        </div>
+        <div class="mt-auto">
+            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow-md w-full block text-center">
+                Start now
+            </a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="pt-32 pb-20 px-6">
+        <!-- The Problem -->
+        <div class="max-w-6xl mx-auto mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Growing your business shouldn't mean becoming a marketer.
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Most professionals are losing time, clients, and credibility because they don't consistently produce high-value content, build authority online, or follow up on leads.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600 mr-4">⏰</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">No time to post, write, or manage social content</h3>
+                                <p class="text-gray-600">Your expertise is in your craft, not in content creation and social media management.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600 mr-4">👥</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">No team to handle SEO, design, or outreach</h3>
+                                <p class="text-gray-600">Building an in-house marketing team is expensive and time-consuming.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-6 h-6 text-indigo-600 mr-4">📈</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">No system to generate and follow up with qualified leads</h3>
+                                <p class="text-gray-600">Missing out on potential clients because you can't scale your outreach.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 aspect-square flex items-center justify-center">
+                    <div class="text-center">
+                        <span class="text-6xl">🎯</span>
+                        <p class="mt-4 text-gray-600">Visual representation of business growth challenges</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Solution -->
+        <div class="max-w-6xl mx-auto mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    INSYNTHIA is your AI-powered growth crew.
+                </h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    A team of 10 specialized AI agents that work like your own marketing & sales team — planning, producing, publishing, and converting.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-4">Plan</h3>
+                    <p class="text-gray-600">Market trends are identified and ideas suggested</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-4xl mb-4">✍️</div>
+                    <h3 class="text-xl font-bold mb-4">Produce</h3>
+                    <p class="text-gray-600">Content, lead magnets, and posts are created and published</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-4">Convert</h3>
+                    <p class="text-gray-600">Leads are qualified and meetings are booked automatically</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- What You Get -->
+        <div class="max-w-6xl mx-auto mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    We write. We publish. We prospect. You grow.
+                </h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+                    Focus on your craft — while INSYNTHIA runs your growth engine on autopilot.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-3xl mb-4">🤖</div>
+                    <h3 class="text-lg font-bold mb-2">Content Marketing Automation</h3>
+                    <p class="text-gray-600">Consistent, high-quality content without the manual work</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-3xl mb-4">🔍</div>
+                    <h3 class="text-lg font-bold mb-2">SEO-Optimized Articles</h3>
+                    <p class="text-gray-600">Rank higher on Google and attract more visitors</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-3xl mb-4">🎁</div>
+                    <h3 class="text-lg font-bold mb-2">Lead Magnet Creation</h3>
+                    <p class="text-gray-600">Convert visitors into leads with valuable resources</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="text-3xl mb-4">🤝</div>
+                    <h3 class="text-lg font-bold mb-2">AI Outreach & Qualification</h3>
+                    <p class="text-gray-600">Automated lead qualification and meeting scheduling</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proven Results -->
+        <div class="max-w-6xl mx-auto mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    Engineered for results. Powered by AI.
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                            <span class="text-2xl">👤</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-600">Independent Consultant</p>
+                        </div>
+                    </div>
+                    <blockquote class="text-gray-700 italic">
+                        "INSYNTHIA has transformed how I approach marketing. I've seen a 300% increase in qualified leads while spending less time on content creation."
+                    </blockquote>
+                </div>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-bold text-indigo-600 mb-2">200+</div>
+                        <p class="text-gray-600">Campaigns launched successfully</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-bold text-indigo-600 mb-2">12</div>
+                        <p class="text-gray-600">AI agents working in perfect sync</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-3xl font-bold text-indigo-600 mb-2">5×</div>
+                        <p class="text-gray-600">More qualified leads generated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Now -->
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl p-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                    Start automating your growth today.
+                </h2>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors shadow-lg btn">
+                        Get Started Now
+                    </a>
+                    <a href="#" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-indigo-600 transition-colors shadow-lg btn">
+                        Talk to an AI Strategist
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">INSYNTHIA</h3>
+                <p class="text-sm">Your AI-powered growth team that works while you sleep.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Product</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Use Cases</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Roadmap</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 mt-8 border-t border-gray-800 text-sm text-center">
+            <p>© 2023 INSYNTHIA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html> 
