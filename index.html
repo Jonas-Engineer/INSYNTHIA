@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSYNTHIA - Your AI-powered growth team</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white bg-opacity-70 backdrop-blur-lg z-50 py-4 px-6 flex justify-between items-center shadow-sm">
+        <div class="font-bold text-xl text-indigo-600">INSYNTHIA</div>
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-indigo-600 transition-colors">Features</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">Use Cases</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">Pricing</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">About</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow-md btn">
+                Start now
+            </a>
+            <button class="menu-toggle md:hidden flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 p-6 flex flex-col">
+        <div class="flex justify-between items-center mb-8">
+            <div class="font-bold text-xl text-indigo-600">INSYNTHIA</div>
+            <button class="menu-toggle flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800 transform rotate-45 translate-y-1.5"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 opacity-0"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 transform -rotate-45 -translate-y-1.5"></span>
+            </button>
+        </div>
+        <div class="flex flex-col space-y-4">
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Features</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Use Cases</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Pricing</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">About</a>
+        </div>
+        <div class="mt-auto">
+            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow-md w-full block text-center">
+                Start now
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 opacity-70"></div>
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+        
+        <!-- Decorative blobs -->
+        <div class="absolute top-20 -left-40 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
+        <div class="absolute bottom-20 -right-40 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float-slow"></div>
+        
+        <div class="relative max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                Your AI-powered growth team.<br>
+                <span class="gradient-text">
+                    10 experts. 1 platform. Infinite results.
+                </span>
+            </h1>
+            <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto mb-10">
+                INSYNTHIA is your autonomous AI crew that writes, posts, converts, and sells — so you can focus on your craft.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#agents" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors shadow-lg btn">
+                    Meet your AI Team
+                </a>
+                <a href="#" class="bg-white border border-gray-300 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors shadow-md btn">
+                    Get started
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agent Cards Section -->
+    <section id="agents" class="py-16 px-6 relative">
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-center">Your dedicated AI growth team</h2>
+            <p class="text-gray-600 text-center max-w-3xl mx-auto mb-16">
+                Meet the specialized AI agents working 24/7 to grow your business
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Sofia -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=1" alt="Sofia" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Sofia</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The Strategist</p>
+                        <p class="text-gray-700 italic">I define your voice, tone, and positioning to align your brand with your goals.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Noah -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=11" alt="Noah" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Noah</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The Market Watcher</p>
+                        <p class="text-gray-700 italic">I monitor your industry and find trending topics that get attention.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Leila -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=5" alt="Leila" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Leila</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The SEO Specialist</p>
+                        <p class="text-gray-700 italic">I help you rank #1 on Google with the right keywords and structure.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- James -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=12" alt="James" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">James</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The Content Writer</p>
+                        <p class="text-gray-700 italic">I turn your ideas into SEO-optimized articles that build authority.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Aya -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=9" alt="Aya" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Aya</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The Editor & Compliance Guardian</p>
+                        <p class="text-gray-700 italic">I refine your content and ensure it's clear, compliant, and impactful.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Liam -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=13" alt="Liam" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Liam</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The Converter</p>
+                        <p class="text-gray-700 italic">I craft guides and tools that turn readers into qualified leads.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Chloe -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=3" alt="Chloe" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Chloe</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The Social Media Strategist</p>
+                        <p class="text-gray-700 italic">I translate your articles into posts that drive traffic and engagement.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Adam -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=14" alt="Adam" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Adam</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The Funnel Architect</p>
+                        <p class="text-gray-700 italic">I design landing pages that turn visitors into prospects — beautifully.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Elena -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=6" alt="Elena" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Elena</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The AI Sales Rep</p>
+                        <p class="text-gray-700 italic">I contact, qualify, and schedule meetings with your most promising leads.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kai -->
+                <div class="bg-white bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-2xl p-6 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 glassmorphism">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-indigo-400 to-purple-400 mb-4 overflow-hidden">
+                            <img src="https://i.pravatar.cc/96?img=15" alt="Kai" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold mb-1">Kai</h3>
+                        <p class="text-gray-500 text-sm uppercase tracking-wide mb-2">The Performance Analyst</p>
+                        <p class="text-gray-700 italic">I analyze what works and optimize your next campaign.</p>
+                        <button class="mt-4 text-indigo-600 text-sm hover:text-indigo-800 transition-colors">
+                            See what I do →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to scale with your AI growth team?</h2>
+            <p class="text-indigo-100 text-lg mb-10 max-w-2xl mx-auto">
+                INSYNTHIA works 24/7 to grow your business while you focus on what matters most.
+            </p>
+            <a href="#" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-colors shadow-lg inline-block btn">
+                Get started now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">INSYNTHIA</h3>
+                <p class="text-sm">Your AI-powered growth team that works while you sleep.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Product</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Use Cases</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Roadmap</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 mt-8 border-t border-gray-800 text-sm text-center">
+            <p>© 2023 INSYNTHIA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html> 
