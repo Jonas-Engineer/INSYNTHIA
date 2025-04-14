@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - INSYNTHIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white bg-opacity-70 backdrop-blur-lg z-50 py-4 px-6 flex justify-between items-center shadow-sm">
+        <div class="font-bold text-xl text-indigo-600">INSYNTHIA</div>
+        <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">Features</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors">Use Cases</a>
+            <a href="pricing.html" class="hover:text-indigo-600 transition-colors">Pricing</a>
+            <a href="about.html" class="hover:text-indigo-600 transition-colors">About</a>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow-md btn">
+                Start now
+            </a>
+            <button class="menu-toggle md:hidden flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+                <span class="block w-6 h-0.5 bg-gray-800"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 p-6 flex flex-col">
+        <div class="flex justify-between items-center mb-8">
+            <div class="font-bold text-xl text-indigo-600">INSYNTHIA</div>
+            <button class="menu-toggle flex flex-col space-y-1">
+                <span class="block w-6 h-0.5 bg-gray-800 transform rotate-45 translate-y-1.5"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 opacity-0"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 transform -rotate-45 -translate-y-1.5"></span>
+            </button>
+        </div>
+        <div class="flex flex-col space-y-4">
+            <a href="index.html" class="hover:text-indigo-600 transition-colors py-2">Home</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Features</a>
+            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Use Cases</a>
+            <a href="pricing.html" class="hover:text-indigo-600 transition-colors py-2">Pricing</a>
+            <a href="about.html" class="hover:text-indigo-600 transition-colors py-2">About</a>
+        </div>
+        <div class="mt-auto">
+            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow-md w-full block text-center">
+                Start now
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Simple, scalable pricing — based on what you need.
+            </h1>
+            <p class="text-xl text-gray-600 mb-4">
+                Start small or scale up. You choose which AI agents to activate — and we handle the rest.
+            </p>
+            <p class="text-gray-500">
+                No hiring. No agencies. Just results.
+            </p>
+        </div>
+    </section>
+
+    <!-- Pricing Tiers -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Essential Plan -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:scale-[1.02] transition-transform">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Essential</h3>
+                        <div class="text-4xl font-bold text-indigo-600 mb-4">€49<span class="text-lg text-gray-500">/month</span></div>
+                        <p class="text-gray-600">For solo professionals who want content without hassle.</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>2 SEO articles/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>1 lead magnet generated</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Auto-publishing on LinkedIn + website</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Basic analytics dashboard</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Access to 4 AI agents</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-indigo-600 text-white text-center py-3 rounded-lg hover:bg-indigo-700 transition-colors shadow-md">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:scale-[1.02] transition-transform border-2 border-indigo-500">
+                    <div class="absolute top-0 right-0 bg-indigo-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-lg text-sm">
+                        Most Popular
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Pro</h3>
+                        <div class="text-4xl font-bold text-indigo-600 mb-4">€149<span class="text-lg text-gray-500">/month</span></div>
+                        <p class="text-gray-600">For pros who want to automate content + lead generation.</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>4 SEO articles/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>2 lead magnets/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Publishing on LinkedIn, Twitter & Instagram</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Full analytics dashboard</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>AI Sales Rep outreach</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Access to 8 AI agents</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-indigo-600 text-white text-center py-3 rounded-lg hover:bg-indigo-700 transition-colors shadow-md">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Growth Crew Plan -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:scale-[1.02] transition-transform">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-2">Growth Crew</h3>
+                        <div class="text-4xl font-bold text-indigo-600 mb-4">Custom</div>
+                        <p class="text-gray-600">For firms or teams who want full automation and results at scale.</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Custom content strategy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Unlimited content & lead magnets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Full sales sequence</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>CRM integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Custom onboarding + human assistance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>10 AI agents activated</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-500 mr-2">✓</span>
+                            <span>Dedicated AI strategist</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-indigo-600 text-white text-center py-3 rounded-lg hover:bg-indigo-700 transition-colors shadow-md">
+                        Book a Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="py-12 px-6 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-2xl mb-2">🔄</div>
+                    <p class="text-gray-600">Cancel anytime</p>
+                </div>
+                <div>
+                    <div class="text-2xl mb-2">🔒</div>
+                    <p class="text-gray-600">Secure AI architecture</p>
+                </div>
+                <div>
+                    <div class="text-2xl mb-2">📜</div>
+                    <p class="text-gray-600">100% GDPR compliant</p>
+                </div>
+                <div>
+                    <div class="text-2xl mb-2">🔐</div>
+                    <p class="text-gray-600">Your data stays private</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold mb-2">Can I switch plans later?</h3>
+                    <p class="text-gray-600">Yes, you can upgrade or downgrade your plan at any time. Changes will take effect at the start of your next billing cycle.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold mb-2">What's included in a lead magnet?</h3>
+                    <p class="text-gray-600">Lead magnets are valuable resources like ebooks, checklists, or templates that we create to help you capture leads. We handle the research, writing, and design.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold mb-2">Do I need to write anything myself?</h3>
+                    <p class="text-gray-600">No, our AI agents handle all content creation. However, you can review and approve content before it's published if you wish.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold mb-2">What if I don't have time to validate content?</h3>
+                    <p class="text-gray-600">Our AI agents include a Reviewer that ensures all content meets quality standards. You can also set up auto-publishing for complete hands-off operation.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold mb-2">Do I need technical skills to use INSYNTHIA?</h3>
+                    <p class="text-gray-600">No technical skills required. Our platform is designed for professionals who want to focus on their business, not on technical details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">INSYNTHIA</h3>
+                <p class="text-sm">Your AI-powered growth team that works while you sleep.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Product</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Use Cases</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Roadmap</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-medium mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto pt-8 mt-8 border-t border-gray-800 text-sm text-center">
+            <p>© 2023 INSYNTHIA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html> 
