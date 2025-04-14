@@ -80,17 +80,20 @@ document.addEventListener('DOMContentLoaded', function() {
   const setupSmoothScroll = function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 80, // Adjust for fixed header
-            behavior: 'smooth'
-          });
+        // Only prevent default for internal anchor links
+        if (this.getAttribute('href').startsWith('#')) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80, // Adjust for fixed header
+              behavior: 'smooth'
+            });
+          }
         }
       });
     });
