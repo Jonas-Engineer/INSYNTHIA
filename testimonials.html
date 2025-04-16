@@ -10,51 +10,7 @@
     <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
 </head>
 <body class="bg-gray-50 font-sans text-gray-900">
-    <!-- Navbar -->
-    <nav class="fixed w-full bg-white bg-opacity-70 backdrop-blur-lg z-50 py-4 px-6 flex justify-between items-center shadow-sm">
-        <div class="font-bold text-xl text-indigo-600">INSYNTHIA</div>
-        <div class="hidden md:flex space-x-6">
-            <a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a>
-            <a href="#" class="hover:text-indigo-600 transition-colors">Features</a>
-            <a href="#" class="hover:text-indigo-600 transition-colors">Use Cases</a>
-            <a href="https://jonas-engineer.github.io/INSYNTHIA/pricing.html" class="hover:text-indigo-600 transition-colors">Pricing</a>
-            <a href="about.html" class="hover:text-indigo-600 transition-colors">About</a>
-        </div>
-        <div class="flex items-center space-x-4">
-            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow-md btn">
-                Start now
-            </a>
-            <button class="menu-toggle md:hidden flex flex-col space-y-1">
-                <span class="block w-6 h-0.5 bg-gray-800"></span>
-                <span class="block w-6 h-0.5 bg-gray-800"></span>
-                <span class="block w-6 h-0.5 bg-gray-800"></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 p-6 flex flex-col">
-        <div class="flex justify-between items-center mb-8">
-            <div class="font-bold text-xl text-indigo-600">INSYNTHIA</div>
-            <button class="menu-toggle flex flex-col space-y-1">
-                <span class="block w-6 h-0.5 bg-gray-800 transform rotate-45 translate-y-1.5"></span>
-                <span class="block w-6 h-0.5 bg-gray-800 opacity-0"></span>
-                <span class="block w-6 h-0.5 bg-gray-800 transform -rotate-45 -translate-y-1.5"></span>
-            </button>
-        </div>
-        <div class="flex flex-col space-y-4">
-            <a href="index.html" class="hover:text-indigo-600 transition-colors py-2">Home</a>
-            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Features</a>
-            <a href="#" class="hover:text-indigo-600 transition-colors py-2">Use Cases</a>
-            <a href="https://jonas-engineer.github.io/INSYNTHIA/pricing.html" class="hover:text-indigo-600 transition-colors py-2">Pricing</a>
-            <a href="about.html" class="hover:text-indigo-600 transition-colors py-2">About</a>
-        </div>
-        <div class="mt-auto">
-            <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow-md w-full block text-center">
-                Start now
-            </a>
-        </div>
-    </div>
+    <!-- Navigation will be inserted here by navigation.js -->
 
     <!-- Hero Section -->
     <section class="pt-32 pb-20 px-6 relative overflow-hidden">
@@ -248,14 +204,14 @@
                 <ul class="space-y-2 text-sm">
                     <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Use Cases</a></li>
-                    <li><a href="https://jonas-engineer.github.io/INSYNTHIA/pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
+                    <li><a href="pricing.html" class="hover:text-white transition-colors">Pricing</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Roadmap</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-white font-medium mb-4">Company</h4>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
                     <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
@@ -276,6 +232,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="navigation.js"></script>
     <script src="main.js"></script>
     <script src="testimonials.js"></script>
     <style>

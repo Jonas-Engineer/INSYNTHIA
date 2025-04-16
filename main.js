@@ -1,14 +1,30 @@
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize all functions
-  initAnimations();
-  setupMobileMenu();
-  setupSmoothScroll();
-  
+  // Initialize animations
+  const initAnimations = function() {
+    // Set initial states for animated elements
+    const cards = document.querySelectorAll('#agents .grid > div:not(nav *)');
+    cards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+
+    const heroElements = document.querySelectorAll('#hero h1, #hero p, #hero a');
+    heroElements.forEach(element => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(20px)';
+      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+
+    // Trigger first animation
+    animateOnScroll();
+  };
+
   // Add animations to elements when they come into view
   const animateOnScroll = function() {
     // Get all agent cards
-    const cards = document.querySelectorAll('#agents .grid > div');
+    const cards = document.querySelectorAll('#agents .grid > div:not(nav *)');
     
     // Apply staggered animations to cards
     cards.forEach((card, index) => {
@@ -43,38 +59,53 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
 
-  // Initialize animations
-  const initAnimations = function() {
-    // Set initial states for animated elements
-    const cards = document.querySelectorAll('#agents .grid > div');
-    cards.forEach(card => {
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(20px)';
-      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    });
-
-    const heroElements = document.querySelectorAll('#hero h1, #hero p, #hero a');
-    heroElements.forEach(element => {
-      element.style.opacity = '0';
-      element.style.transform = 'translateY(20px)';
-      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    });
-
-    // Trigger first animation
-    animateOnScroll();
-  };
-
+  // Initialize all functions
+  initAnimations();
+  setupMobileMenu();
+  setupSmoothScroll();
+  initializeNavLinks();
+  
   // Mobile menu toggle
   const setupMobileMenu = function() {
-    const menuToggle = document.querySelector('.menu-toggle');
+    const menuToggle = document.querySelectorAll('.menu-toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
     
     if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', function() {
-        mobileMenu.classList.toggle('active');
+      menuToggle.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          mobileMenu.classList.toggle('active');
+          // Ensure all navigation links are visible when toggling
+          const navLinks = document.querySelectorAll('nav a, .mobile-menu a');
+          navLinks.forEach(link => {
+            link.style.removeProperty('display');
+            link.style.removeProperty('visibility');
+            link.style.removeProperty('opacity');
+          });
+        });
       });
     }
   };
+
+  // Initialize navigation links
+  function initializeNavLinks() {
+    const navLinks = document.querySelectorAll('nav a, .mobile-menu a');
+    navLinks.forEach(link => {
+      // Remove any inline styles that might affect visibility
+      link.style.removeProperty('display');
+      link.style.removeProperty('visibility');
+      link.style.removeProperty('opacity');
+      
+      // Add click handler to ensure menu items stay visible after navigation
+      link.addEventListener('click', function() {
+        const allLinks = document.querySelectorAll('nav a, .mobile-menu a');
+        allLinks.forEach(l => {
+          l.style.removeProperty('display');
+          l.style.removeProperty('visibility');
+          l.style.removeProperty('opacity');
+        });
+      });
+    });
+  }
 
   // Smooth scroll for anchor links
   const setupSmoothScroll = function() {
@@ -101,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Add hover animations to the agent cards
   const setupCardHover = function() {
-    const cards = document.querySelectorAll('#agents .grid > div');
+    const cards = document.querySelectorAll('#agents .grid > div:not(nav *)');
     
     cards.forEach(card => {
       card.addEventListener('mouseenter', function() {
